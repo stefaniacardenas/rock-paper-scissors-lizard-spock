@@ -1,0 +1,38 @@
+    body {
+      font-family: 'Arial';
+      margin: 15px 0 0 30px;
+    }
+
+    h1 {
+      font-family: 'Arial';
+    }
+
+    .choices img {
+      width: 15%;
+      margin-right: 2.5%;
+      cursor: pointer;
+      opacity: 0.5;
+      transition: 1s all ease;
+    }
+
+    .choices img:hover {
+      opacity: 1;
+    }
+
+    h2, h3 {
+      text-transform: capitalize;
+    }
+
+    #results {
+      list-style: none;
+    }
+
+    #results li {
+      background: #999;
+      color: #fff;
+      font-size: 24px;
+      border-radius: 8px;
+      padding: 5px;
+      width: 80%;
+      margin-bottom: 10px;
+    }
