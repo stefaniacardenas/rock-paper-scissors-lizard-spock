@@ -127,4 +127,14 @@ describe("Rock-Paper-Scissors-Lizard-Spock", function() {
 
   });
 
+  describe('victory messages', function() {
+
+    it("should return the winner's name, the verb and the loser's name", function() {
+      player1.picks('rock');
+      player2.picks('scissors');
+      expect(game.winningMessage()).toEqual('Alex crushes Tony');
+    });
+
+  });
+
 });
