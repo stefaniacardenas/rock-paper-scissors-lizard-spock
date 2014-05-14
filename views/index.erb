@@ -2,10 +2,14 @@
  <head>
  	<title>Rock Paper Scissors Lizard Spock</title>
  	<link href="/stylesheets/application.css" rel="stylesheet" type="text/css">
- 	<body>
+ 	<script src="/javascript/lib/Player.js"></script>
+  <script src="/javascript/lib/Game.js"></script>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+  <body>
 
- 		<h1>Rock Paper Scissors Lizard Spock</h1>
- 		<div class='choices'>
+    <h1>Rock Paper Scissors Lizard Spock</h1>
+    <div class='choices'>
       <img src="images/rock.png" data-pick='rock'>
       <img src="images/paper.png" data-pick='paper'>
       <img src="images/scissors.png" data-pick='scissors'>
@@ -15,18 +19,16 @@
 
     <ul id="results">
     </ul>
-
-    <script src='lib/Player.js'></script>
-    <script src='lib/Game.js'></script>
-    <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
     
     <script>
-      $(document).ready(function(){
+      $(document).ready(function() {
+
         var alex = new Player('Alex');
         var tony = new Player('Tony');
         var game = new Game(alex, tony)
 
         $('.choices img').on('click', function(){
+
           alex.picks($(this).data('pick'));
           tony.picks('rock');
 
@@ -36,6 +38,4 @@
     </script>
   </body>
 </html>
- 	</body>
- 	</head>
- 	</html>
+
