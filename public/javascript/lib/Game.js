@@ -4,14 +4,8 @@ function Game(player1, player2) {
 };
 
  Game.prototype.PAIRS = {
- 	rock: {
-    scissors: 'crushes', 
-    lizard: 'squashes' 
-  },
-	paper: {
-    rock: 'covers',
-    spock: 'disproves' 
-  },
+ 	rock: 				{ scissors: 'crushes', lizard: 'squashes' },
+	paper: 				{ rock: 'covers', spock: 'disproves' },
 	scissors: 		{ paper: 'cuts', lizard: 'decapitates' },
 	spock: 				{ scissors: 'smashes', rock: 'vaporizes' },
 	lizard: 			{ spock: 'poisons', paper: 'eats' }
