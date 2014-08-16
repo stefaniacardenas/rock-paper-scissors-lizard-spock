@@ -1,6 +1,6 @@
 <html>
  <head>
- 	<title>Rock Paper Scissors Lizard Spock</title>
+ 	<title>RPSLSpock!</title>
  	<link href="/stylesheets/application.css" rel="stylesheet" type="text/css">
  	<script src="/javascript/lib/Player.js"></script>
   <script src="/javascript/lib/Game.js"></script>
@@ -8,13 +8,24 @@
 </head>
   <body>
 
-    <h1>Rock Paper Scissors Lizard Spock</h1>
+    <h1>R-P-S-L-Spock!</h1>
+    <h2><p>Rock - Paper - Scissors - Lizard - Spock</p></h2>
     <div class='choices'>
-      <img src="images/rock.png" data-pick='rock'>
-      <img src="images/paper.png" data-pick='paper'>
-      <img src="images/scissors.png" data-pick='scissors'>
-      <img src="images/lizard.png" data-pick='lizard'>
-      <img src="images/spock.png" data-pick='spock'>
+
+      <div class="line-one">
+        <img src="images/rock.png" data-pick='rock'>
+      </div>
+
+      <div class="line-two">
+        <img src="images/paper.png" id="middle-one" data-pick='paper'>
+        <img src="images/scissors.png" id="middle-two" data-pick='scissors'>
+      </div>
+
+        <div class="line-three">
+      <img src="images/lizard.png" id="low-one" data-pick='lizard'>
+      <img src="images/spock.png" id="low-two" data-pick='spock'>
+      </div>
+
     </div>
 
     <ul id="results">
