@@ -1,11 +1,24 @@
-h1 {
+.h-container {
+  background: rgba(155, 194, 209, 0.3);
+  border-radius: 8px;
+  padding: 5px;
+  width: 33%;
+  margin: auto;
   font-family: "pixel";
-  font-size: 50px;
   text-align: center;
+  content: center;
+  line-height: 
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 5px;
   color: blue;
+  margin-bottom: -5px;
 }
 
 .line-one {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
@@ -13,7 +26,7 @@ h1 {
 .line-two {
   display: flex;
   justify-content: center;
-  margin-top: -5px;
+  margin-top: -15px;
 }
 
 .line-three {
@@ -23,11 +36,11 @@ h1 {
 }
 
 #middle-one {
-  margin-right: 60px;
+  margin-right: 55px;
 }
 
 #middle-two {
-  margin-left: 60px;
+  margin-left: 55px;
 }
 
 #low-one {
@@ -52,22 +65,27 @@ h1 {
 h2, h3 {
   font-family: "pixel";
   text-transform: capitalize;
-  text-align: center;
+  color: rgb(184, 19, 184);
 }
 
 #results {
   list-style: none;
+  margin-top: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #results li {
-  background: #999;
-  color: blue;
+  background: rgb(155, 194, 209);
+  color: rgb(184, 19, 184);
   font-size: 35px;
   border-radius: 8px;
   padding: 5px;
   width: 80%;
   margin-bottom: 10px;
-  font-family: "pixel"
+  margin-left: 10px;
+  font-family: "pixel";
 }
 
 @font-face {
