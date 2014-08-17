@@ -3,11 +3,11 @@ body {
 }
 
 .main{
-  background: rgba(190, 140, 209, 0.3);
+  background: rgb(155, 194, 209);
   border-radius: 8px;
   padding: 5px;
   text-align: center;
-  width: 40%;
+  width: 35%;
   margin-left: 33%;
 }
 .game{
@@ -72,7 +72,7 @@ h2, h3 {
 }
 
 h5 {
-  padding: 15px;
+
 }
 
 #results {
@@ -103,6 +103,8 @@ h5 {
   margin-top: 2px;
   position: absolute;
   width: 25%;
+  margin-left: 40px;
+  padding-left: 12px
   }
 
 button {
