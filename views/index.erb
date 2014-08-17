@@ -45,11 +45,10 @@
             document.getElementById("welcome").innerHTML =
             "Hello " + player + "! I am RZ967 and I'm your opponent";
         }
-    }
     
       $(document).ready(function() {
 
-        var user = new Player('You');
+        var user = new Player(player);
         var computer = new Player('RZ967');
         var game = new Game(user, computer)
 
@@ -61,6 +60,7 @@
           $('#results').prepend('<li>' + game.winningMessage() + '</li>');
         })
       })
+    }
     </script>
   </body>
 </html>

@@ -30,9 +30,10 @@ Game.prototype.winningMessage = function() {
 	var message;
 
 	if(this.winner()) {
-		message = [this.winner().name,
+		message = [this.winner().name + " wins!",
+		this.winner().pick,
 		this._victoryVerbFor(this.winner().pick, this.loser().pick),
-		this.loser().name].join(' ');
+		this.loser().pick].join(' ');
 	} else {
 		message = 'Draw';
 	}
