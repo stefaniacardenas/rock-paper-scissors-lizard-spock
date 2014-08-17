@@ -1,13 +1,17 @@
-.h-container {
-  background: rgba(155, 194, 209, 0.3);
+body {
+  font-family: "pixel";
+}
+
+.main{
+  background: rgba(190, 140, 209, 0.3);
   border-radius: 8px;
   padding: 5px;
-  width: 33%;
-  margin: auto;
-  font-family: "pixel";
   text-align: center;
-  content: center;
-  line-height: 
+  width: 40%;
+  margin-left: 33%;
+}
+.game{
+  margin-left: 3%;
 }
 
 h1 {
@@ -63,9 +67,12 @@ h1 {
 }
 
 h2, h3 {
-  font-family: "pixel";
   text-transform: capitalize;
   color: rgb(184, 19, 184);
+}
+
+h5 {
+  padding: 15px;
 }
 
 #results {
@@ -85,15 +92,72 @@ h2, h3 {
   width: 80%;
   margin-bottom: 10px;
   margin-left: 10px;
-  font-family: "pixel";
 }
 
 #welcome {
+  background: rgb(155, 194, 209);
+  color: rgb(184, 19, 184);
+  font-size: 35px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  position: absolute;
+  width: 25%;
+  }
+
+button {
   font-family: "pixel";
-  font-size: 25px;
+  font-size: 45px;
+  background-color: blue;
+  color: white;
+  width: 4em;
 }
 
 @font-face {
   font-family: "pixel";
   src: url("/pixel.ttf");
+}
+
+#dialogoverlay{
+  display: none;
+  opacity: .8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #FFF;
+  width: 100%;
+  z-index: 10;
+}
+
+#dialogbox{
+  display: none;
+  position: fixed;
+  background: #000;
+  border-radius:7px; 
+  width:550px;
+  z-index: 10;
+  font-family: "pixel";
+}
+
+#dialogbox > div{ 
+  background:#FFF;
+  margin:8px; 
+}
+
+#dialogbox > div > #dialogboxhead { 
+  background: rgb(184, 19, 184);
+  font-size:40px; padding:10px;
+  color:white; 
+}
+
+#dialogbox > div > #dialogboxbody{
+  background: black;
+  font-size:40px; 
+  padding:20px; 
+  color:#FFF; 
+}
+#dialogbox > div > #dialogboxfoot{ 
+  background: rgb(184, 19, 184);
+  padding:10px; 
+  text-align:right; 
 }

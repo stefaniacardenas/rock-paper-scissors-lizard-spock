@@ -4,17 +4,22 @@
  	<link href="/stylesheets/application.css" rel="stylesheet" type="text/css">
  	<script src="/javascript/lib/Player.js"></script>
   <script src="/javascript/lib/Game.js"></script>
+  <script src="/javascript/lib/dialog.js"></script>
   <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 </head>
   <body>
     <div class="h-container">
-      <h1>R-P-S-L-Spock!</h1>
-      <h2><p>Rock - Paper - Scissors - Lizard - Spock</p></h2>
+      <div class="main">
+        <h1>R-P-S-L-Spock!</h1>
+        <h2><p>Rock - Paper - Scissors - Lizard - Spock</p></h2>
+      </div>
     </div>
-
-    <button onclick="myFunction()">New Player</button>
-
-      <p id="welcome"></p>
+    
+    <div class="game">
+     <button onclick="Prompt.render('Enter name:','newGame')">New game</button>
+    </div>
+    
+    <p id="welcome"></p>
 
     <div class='choices'>
 
@@ -36,20 +41,27 @@
 
     <ul id="results">
     </ul>
+
+    <div id="dialogoverlay"></div>
+    <div id="dialogbox">
+      <div>
+        <div id="dialogboxhead"></div>
+        <div id="dialogboxbody"></div>
+        <div id="dialogboxfoot"></div>
+      </div>
+    </div>
     
     <script>
-    function myFunction() {
-        var player = prompt("Player name");
-        
+    function newGame(player) {        
         if (player != null) {
             document.getElementById("welcome").innerHTML =
-            "Hello " + player + "! I am RZ967 and I'm your opponent";
+            "Hello " + player + "! My name is SYD and I'm your opponent. Take your pick.";
         }
     
       $(document).ready(function() {
 
         var user = new Player(player);
-        var computer = new Player('RZ967');
+        var computer = new Player('SYD');
         var game = new Game(user, computer)
 
         $('.choices img').on('click', function(){
@@ -60,6 +72,11 @@
           $('#results').prepend('<li>' + game.winningMessage() + '</li>');
         })
       })
+        setTimeout(fade_out, 5000);
+
+        function fade_out() {
+        $("#welcome").fadeOut().empty();
+      }
     }
     </script>
   </body>

@@ -30,10 +30,12 @@ Game.prototype.winningMessage = function() {
 	var message;
 
 	if(this.winner()) {
-		message = [this.winner().name + " wins!",
+		message = [
+		this.winner().name + " wins!",
+		"SYD picked: " + this.player2.pick.toUpperCase() + ".\n",
 		this.winner().pick.toUpperCase(),
 		this._victoryVerbFor(this.winner().pick, this.loser().pick),
-		this.loser().pick.toUpperCase()].join(' ');
+		this.loser().pick.toUpperCase() + ". "].join(' ');
 	} else {
 		message = 'Draw';
 	}
