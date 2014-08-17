@@ -31,9 +31,9 @@ Game.prototype.winningMessage = function() {
 
 	if(this.winner()) {
 		message = [this.winner().name + " wins!",
-		this.winner().pick,
+		this.winner().pick.toUpperCase(),
 		this._victoryVerbFor(this.winner().pick, this.loser().pick),
-		this.loser().pick].join(' ');
+		this.loser().pick.toUpperCase()].join(' ');
 	} else {
 		message = 'Draw';
 	}
