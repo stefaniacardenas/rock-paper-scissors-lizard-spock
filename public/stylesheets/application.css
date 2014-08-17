@@ -88,6 +88,11 @@ h2, h3 {
   font-family: "pixel";
 }
 
+#welcome {
+  font-family: "pixel";
+  font-size: 25px;
+}
+
 @font-face {
   font-family: "pixel";
   src: url("/pixel.ttf");

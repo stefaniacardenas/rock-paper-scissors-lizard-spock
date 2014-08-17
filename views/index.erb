@@ -11,6 +11,11 @@
       <h1>R-P-S-L-Spock!</h1>
       <h2><p>Rock - Paper - Scissors - Lizard - Spock</p></h2>
     </div>
+
+    <button onclick="myFunction()">New Player</button>
+
+      <p id="welcome"></p>
+
     <div class='choices'>
 
       <div class="line-one">
@@ -33,16 +38,25 @@
     </ul>
     
     <script>
+    function myFunction() {
+        var player = prompt("Player name");
+        
+        if (player != null) {
+            document.getElementById("welcome").innerHTML =
+            "Hello " + player + "! I am RZ967 and I'm your opponent";
+        }
+    }
+    
       $(document).ready(function() {
 
-        var alex = new Player('Alex');
-        var tony = new Player('Tony');
-        var game = new Game(alex, tony)
+        var user = new Player(player);
+        var computer = new Player('Computer');
+        var game = new Game(user, computer)
 
         $('.choices img').on('click', function(){
 
-          alex.picks($(this).data('pick'));
-          tony.picks('rock');
+          player.picks($(this).data('pick'));
+          computer.picks('rock');
 
           $('#results').prepend('<li>' + game.winningMessage() + '</li>');
         })
