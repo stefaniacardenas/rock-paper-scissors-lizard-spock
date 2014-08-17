@@ -49,14 +49,14 @@
     
       $(document).ready(function() {
 
-        var user = new Player(player);
-        var computer = new Player('Computer');
+        var user = new Player('You');
+        var computer = new Player('RZ967');
         var game = new Game(user, computer)
 
         $('.choices img').on('click', function(){
 
-          player.picks($(this).data('pick'));
-          computer.picks('rock');
+          user.picks($(this).data('pick'));
+          computer.picks(game.sample());
 
           $('#results').prepend('<li>' + game.winningMessage() + '</li>');
         })
