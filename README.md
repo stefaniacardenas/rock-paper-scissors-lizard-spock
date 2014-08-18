@@ -9,9 +9,9 @@ The app has been deployed on Heroku and is available [here] (http://rock-lizard-
 Screenshots
 ------------
 
-[alt tag] (https://github.com/stefaniacardenas/rock-paper-scissors-lizard-spock/blob/master/public/images/home.png)
-[alt tag] (https://github.com/stefaniacardenas/rock-paper-scissors-lizard-spock/blob/58566d4b611d226138931a45aa7011922642e152/public/images/prompt.png)
-[alt tag] (https://github.com/stefaniacardenas/rock-paper-scissors-lizard-spock/blob/58566d4b611d226138931a45aa7011922642e152/public/images/game.png)
+![alt tag](https://github.com/stefaniacardenas/rock-paper-scissors-lizard-spock/blob/master/public/images/home.png)
+[alt tag](https://github.com/stefaniacardenas/rock-paper-scissors-lizard-spock/blob/58566d4b611d226138931a45aa7011922642e152/public/images/prompt.png)
+[alt tag](https://github.com/stefaniacardenas/rock-paper-scissors-lizard-spock/blob/58566d4b611d226138931a45aa7011922642e152/public/images/game.png)
 
 
 Technologies used
